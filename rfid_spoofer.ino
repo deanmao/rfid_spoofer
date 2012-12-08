@@ -60,7 +60,6 @@ void sendStartCode() {
 }
 
 void sendStopCode() {
-  byte z[10] = {0x1, 0x1, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0};
   for(int i=0; i<4; i++) {
     sendBit(finalParity[i]);
   }
